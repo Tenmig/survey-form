@@ -1,0 +1,70 @@
+body{
+    max-width: 2000px;
+    width: 400px;
+    margin: 10px auto;
+    background-image: url(images/bd4fc33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    background-color: rgb(106, 17, 17);
+    padding-bottom: 10px;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 0;
+}
+.heading p{
+    margin-top: 0;
+    font-size: 14px;
+}
+.heading hr{
+    background-color: white;
+    color: white;
+}
+
+form{
+    color: white;
+}
+
+input, label{
+    display: block;
+}
+fieldset{
+    border: 0;
+}
+#name, #email, #number, #dropdown, #comment{
+    background-color: rgb(222, 194, 194);
+    padding: 5px 0;
+    width: 100%;
+    border: rgb(120, 17, 17);
+    color: rgb(106, 17, 17);
+    margin-bottom: 5px;
+}
+
+.gender, .yes_no{
+    display: inline;
+    margin-top: 0;
+}
+
+.personal_info p{
+    margin-bottom: 2px;
+}
+
+input[type="submit"] {
+    width: 30%;
+    margin: auto;
+    color: rgb(106, 17, 17);
+    background-color: rgb(222, 194, 194);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(106, 17, 17);
+    color: rgb(222, 194, 194);
+}

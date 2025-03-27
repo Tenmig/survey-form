@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="heading">
+            <h1 id="title">SRF Survey</h1>
+            <p id="description">Yours opinion on serafe bill</p>
+            <hr>
+        </div>
+
+        <form action="survey.html" id="survey-form">
+            <fieldset class="personal_info">
+                <label for="name" id="name-label">name: </label>
+                <input type="text" id="name" placeholder="max" required>
+                <label for="email" id="email-label">Email: </label>
+                <input type="email" id="email" placeholder="max@email.com" required>
+                <label for="number" id="number-label">age: </label>
+                <input type="number" id="number" min="0" max="120" placeholder="21" required>
+                <p>gender:</p>
+                <input type="radio" name="gender" id="male" class="gender" value="Male">
+                <label for="male" class="gender">male</label>
+                <input type="radio" name="gender" id="female" class="gender" value="female">
+                <label for="female" class="gender">female</label>
+            </fieldset>
+            <fieldset>
+                <legend>Opinion: </legend>
+                <select name="opinion" id="dropdown">
+                    <option value="good">good</option>
+                    <option value="bad">bad</option>
+                    <option value="worst">so not needed</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Get rid of serafe:</legend>
+                <label for="yes" class="yes_no">yes: <input type="checkbox" id="yes" class="yes_no" value="yes" name="checkbox"></label>
+                <label for="no" class="yes_no">no: <input type="checkbox" id="no" class="yes_no" value="no" name="checkbox"></label>
+            </fieldset>
+            <fieldset>
+                <label for="comment">Comment: </label>
+                <textarea name="comment" id="comment"></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="submit">
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
